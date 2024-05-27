@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "auto-ml-app"
+version = "0.1.0"
+description = ""
+authors = ["Sherwin-14 <varghesesheriwn@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+streamlit = "^1.0.0"
+pandas-profiling = "^3.0.0"
+pycaret = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
