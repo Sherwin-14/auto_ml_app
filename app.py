@@ -25,7 +25,10 @@ if choice == "Upload":
         pass
 
 if choice == "Profiling":
-    st.title("Exploratory Data Analysis")
+    st.title("Automated EDA")
+    pr = ProfileReport(df,minimal=True, orange_mode=True, explorative=True)
+
+    st_profile_report(pr, navbar=True)
 
 
 if choice == "ML":
