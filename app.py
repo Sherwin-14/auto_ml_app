@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import os
-import pandas_profiling as pf
-from streamlit_pandas_profiling import st_profile_report
+from ydata_profiling import ProfileReport
+from streamlit_ydata_profiling import st_profile_report
 
 with st.sidebar:
     #st.image()

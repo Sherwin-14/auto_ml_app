@@ -6,11 +6,12 @@ authors = ["Sherwin-14 <varghesesheriwn@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.12,<3.13"
+python = ">=3.10.14,<3.12"
+kaleido = "0.2.1"
 streamlit = "^1.35.0"
-ydata-profiling = "^4.8.3"
 pycaret = "^3.3.2"
-kaleido = "^0.2.1"
+ydata-profiling = "^4.8.3"
+streamlit-ydata-profiling = "^0.2.1"
 
 
 [build-system]
