@@ -4,6 +4,9 @@ import os
 from ydata_profiling import ProfileReport
 from streamlit_ydata_profiling import st_profile_report
 
+#ML Stuff
+from pycaret.classification import setup, compare_models, pull, save_model
+
 with st.sidebar:
     #st.image()
     st.title("AutoStreamML")
@@ -32,7 +35,17 @@ if choice == "Profiling":
 
 
 if choice == "ML":
-    pass
+    st.title("Train your model")
+    target = st.selectbox("Select your target feature",df.columns)
+    setup(df, target=target)
+    setup_df= pull()
+    st.info("This is an ML Experiment Settings")
+    st.dataframe(setup_df)
+    best_model= compare_models()
+    compare_df = pull()
+    st.info("This is the Ml Model")
+    st.dataframe(compare_df)
+    best_model
 
 
 if choice == "Download":
