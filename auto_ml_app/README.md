@@ -1,3 +1,3 @@
-#  DataPulse Analytics 
+#  DataStream Analytics 
 
 DataStream Analytics is a powerful tool designed for data analysts. It automates the Machine Learning (ML) process using Streamlit, Pandas Profiling, and PyCaret. Users can upload datasets, perform automated Exploratory Data Analysis (EDA), train ML models for both classification and regression problems, and compare model performances. The application also includes an interactive data visualization feature. With its user-friendly interface and comprehensive features, DataStream Analytics simplifies data analysis and model building, making it an excellent choice for data analysts.
